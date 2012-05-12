@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">What\'s my size?</string>
+    <string name="dpi_qualifier">ldpi</string>
+    <string name="view_width">%1$.0fdp (%2$dpx)</string>
+    <string name="view_height">%1$.0fdp\n(%2$dpx)</string>
+    <string name="screen_dimensions_dips">%1$.0fx%2$.0fdp</string>
+    <string name="screen_dimensions_pixels">%1$dx%2$dpx</string>        
+</resources>

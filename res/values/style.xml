@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SizeMeUp" parent="@android:style/Theme.Light">
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+    
+    <style name="ViewSizeLabel" parent="@android:style/Widget.TextView">
+        
+    </style>
+</resources>

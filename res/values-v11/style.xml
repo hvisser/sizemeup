@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SizeMeUp" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@drawable/background</item>
+       	<item name="android:actionBarStyle">@style/Widget.SizeMeUp.ActionBar</item>        
+    </style>
+    
+     <style name="Widget.SizeMeUp.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar</item>
+     </style>
+</resources>
