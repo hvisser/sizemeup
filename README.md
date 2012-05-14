@@ -1,4 +1,6 @@
-This is an example app for [my](https://twitter.com/botteaap) "Embracing Fragmentation" talk that I gave at [Mobile Down South](http://www.mobiledownsouth.nl/8/sprekers.html#HugoVisser) and [mdevcon](http://mdevcon.com/2012/01/10/hugo-visser/).
+README
+======
+This is an example app for [my](https://twitter.com/botteaap) "Embracing Fragmentation" talk that I gave at [Mobile Down South](http://www.mobiledownsouth.nl/8/sprekers.html#HugoVisser) and earlier at [mdevcon](http://mdevcon.com/2012/01/10/hugo-visser/).
 
 The app shows the screen class, dpi, the screen size and the available space or view size  of an Android in both pixels and device independent pixels (dips).
 
