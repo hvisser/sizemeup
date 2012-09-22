@@ -1,5 +1,6 @@
 package nl.qbus.sizemeup;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
@@ -18,12 +19,14 @@ public class SizeFragment extends Fragment {
 
         TextView screenDimensionPixels = (TextView) view.findViewById(R.id.screenDimensionsPixels);
         TextView screenDimensionDips = (TextView) view.findViewById(R.id.screenDimensionsDips);
+        TextView model = (TextView) view.findViewById(R.id.model);
         mLabelArrowWidth = (TextView) view.findViewById(R.id.horizontal_label);
         mLabelArrowHeight = (TextView) view.findViewById(R.id.vertical_label);
 
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         screenDimensionPixels.setText(getString(R.string.screen_dimensions_pixels, metrics.widthPixels, metrics.heightPixels));
         screenDimensionDips.setText(getString(R.string.screen_dimensions_dips, metrics.widthPixels/metrics.density, metrics.heightPixels/metrics.density));
+        model.setText(Build.MODEL);
         return view;
     }
 
