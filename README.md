@@ -1,6 +1,6 @@
 README
 ======
-This is an example app for [my](https://twitter.com/botteaap) "Embracing Fragmentation" talk that I gave at [Mobile Down South](http://www.mobiledownsouth.nl/8/sprekers.html#HugoVisser) and earlier at [mdevcon](http://mdevcon.com/2012/01/10/hugo-visser/).
+This is an example app for [my](https://twitter.com/botteaap) "Embracing Fragmentation" talk that I gave at Apps World, [Mobile Down South](http://www.mobiledownsouth.nl/8/sprekers.html#HugoVisser) and earlier at [mdevcon](http://mdevcon.com/2012/01/10/hugo-visser/).
 
 The app shows the screen class, dpi, the screen size and the available space or view size  of an Android in both pixels and device independent pixels (dips).
 
@@ -17,4 +17,4 @@ This only shows the tip of the iceberg of what is possible; the resource system 
 
 Contact
 -------
-If you want to get in touch just [contact me on twitter](https://twitter.com/botteaap) or [visit the Qbus website](http://www.qbus-ict.nl) to see what we're up to.
+If you want to get in touch just [contact me on twitter](https://twitter.com/botteaap) or [Google+](https://google.com/+hugovisser)
