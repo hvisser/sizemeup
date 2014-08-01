@@ -15,10 +15,24 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
+
+    if (ext.has('keyStorePassword')) {
+        signingConfigs {
+            release {
+                storeFile ext.keyStoreFile;
+                storePassword keyStorePassword
+                keyAlias "weerplaza"
+                keyPassword keyAliasPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
             runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            if (ext.has('keyStorePassword')) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 }
