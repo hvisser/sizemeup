@@ -16,25 +16,23 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
-    if (ext.has('keyStorePassword')) {
-        signingConfigs {
-            release {
-                storeFile ext.keyStoreFile;
-                storePassword keyStorePassword
-                keyAlias "weerplaza"
-                keyPassword keyAliasPassword
-            }
-        }
-    }
-
     buildTypes {
         release {
             runProguard false
-            if (ext.has('keyStorePassword')) {
-                signingConfig signingConfigs.release
-            }
         }
     }
+}
+
+if (ext.has('keyStorePassword')) {
+    android.signingConfigs {
+        release {
+            keyAlias "sizemeup"
+        }
+    }
+    android.signingConfigs.release.storeFile = new File(ext.keyStoreFile)
+    android.signingConfigs.release.storePassword = ext.keyStorePassword;
+    android.signingConfigs.release.keyPassword = ext.keyAliasPassword;
+    android.buildTypes.release.signingConfig = android.signingConfigs.release
 }
 
 dependencies {
