@@ -1,14 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20"
+    compileSdkVersion 27
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 20
-        versionCode 5
-        versionName "1.0.3"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 6
+        versionName "1.0.4"
     }
 
     compileOptions {
@@ -18,7 +17,7 @@ android {
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
         }
     }
 }
@@ -36,5 +35,5 @@ if (ext.has('keyStorePassword')) {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:20.+'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
 }

@@ -2,6 +2,7 @@ package nl.qbus.sizemeup;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -14,14 +15,14 @@ public class SizeFragment extends Fragment {
     private TextView mLabelArrowHeight;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.size_view, container, false);
 
-        TextView screenDimensionPixels = (TextView) view.findViewById(R.id.screenDimensionsPixels);
-        TextView screenDimensionDips = (TextView) view.findViewById(R.id.screenDimensionsDips);
-        TextView model = (TextView) view.findViewById(R.id.model);
-        mLabelArrowWidth = (TextView) view.findViewById(R.id.horizontal_label);
-        mLabelArrowHeight = (TextView) view.findViewById(R.id.vertical_label);
+        TextView screenDimensionPixels = view.findViewById(R.id.screenDimensionsPixels);
+        TextView screenDimensionDips = view.findViewById(R.id.screenDimensionsDips);
+        TextView model = view.findViewById(R.id.model);
+        mLabelArrowWidth = view.findViewById(R.id.horizontal_label);
+        mLabelArrowHeight = view.findViewById(R.id.vertical_label);
 
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         screenDimensionPixels.setText(getString(R.string.screen_dimensions_pixels, metrics.widthPixels, metrics.heightPixels));
